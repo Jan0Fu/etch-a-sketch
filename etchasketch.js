@@ -6,7 +6,7 @@ let a, b, c = 0
 window.addEventListener('load', gridDefault);
 
 function gridDefault() {
-    for (let i=0; i<20 * 20; i++) {
+    for (let i = 0; i < 20 * 20; i++) {
         const divcreate = document.createElement('div');
         gridcontainer.appendChild(divcreate);
     }
@@ -29,7 +29,7 @@ gridsize.addEventListener('click', () => {
         while (gridcontainer.firstChild) {
             gridcontainer.firstChild.remove()
         }
-        for (let i=0; i<gridinput**2; i++) {
+        for (let i = 0; i < gridinput**2; i++) {
             const divcreate = document.createElement('div');
             gridcontainer.appendChild(divcreate);
         }
